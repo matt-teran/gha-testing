@@ -1,0 +1,8 @@
+name: "Tester"
+description: "👀"
+branding:
+  icon: "git-merge"
+  color: "purple"
+runs:
+  using: "node20"
+  main: "dist/index.js"
