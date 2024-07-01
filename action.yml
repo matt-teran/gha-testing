@@ -3,6 +3,10 @@ description: "👀"
 branding:
   icon: "git-merge"
   color: "purple"
+inputs:
+  ignore-head-environment-not-found-error:
+    description: "some description"
+    required: false
 runs:
   using: "node20"
   main: "dist/index.js"

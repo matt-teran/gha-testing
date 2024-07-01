@@ -31130,6 +31130,14 @@ __nccwpck_require__.r(__webpack_exports__);
 function runGitHubAction() {
   _actions_core__WEBPACK_IMPORTED_MODULE_0__.info("Hello, world!");
   _actions_core__WEBPACK_IMPORTED_MODULE_0__.info(JSON.stringify(_actions_github__WEBPACK_IMPORTED_MODULE_1__.context));
+  const input = _actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput("ignore-head-environment-not-found-error", {
+    required: false,
+  });
+  if (input == null) {
+    _actions_core__WEBPACK_IMPORTED_MODULE_0__.info("input is nullish: " + input.length);
+  } else {
+    _actions_core__WEBPACK_IMPORTED_MODULE_0__.info("input is not nullish: " + input.length);
+  }
 }
 
 runGitHubAction();
